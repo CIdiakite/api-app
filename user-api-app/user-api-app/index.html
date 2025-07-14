@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liste des Utilisateurs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .user-container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .user-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .user-card:hover {
+      transform: translateY(-5px);
+      background-color: #e6f0ff;
+    }
+
+    .user-card h2 {
+      margin-top: 0;
+      color: #004080;
+    }
+
+    .user-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Liste des Utilisateurs</h1>
+
+  <div class="user-container">
+    <div class="user-card">
+      <h2>Leanne Graham</h2>
+      <p><strong>Email:</strong> Sincere@april.biz</p>
+      <p><strong>Adresse:</strong> Gwenborough, Kulas Light</p>
+    </div>
+
+    <div class="user-card">
+      <h2>Ervin Howell</h2>
+      <p><strong>Email:</strong> Shanna@melissa.tv</p>
+      <p><strong>Adresse:</strong> Wisokyburgh, Victor Plains</p>
+    </div>
+
+    <!-- Tu peux dupliquer les <div class="user-card"> autant que tu veux -->
+  </div>
+
+</body>
+</html>
